@@ -1,13 +1,23 @@
+# AMACollision
+
 This is a repository for the paper "AMACollision: An Advanced Framework for Testing Autonomous Vehicles Based on Adversarial Multi-Agent".
 
 
 
 AMACollision is a multi-agent adversarial testing platform built on top of the CARLA Autonomous Driving simulator and Macad-Gym.
 
-### Getting Started
+
+
+## Results
+
+All agents were evaluated on six metrics (*collision rate, similarity, speed, waypoint distance, total reward, and timesteps*), two disjoint weather sets (only one used during training), over all CARLA towns (from `Town01` to `Town10`) but only trained on `Town03`.
+
+
+
+## Getting Started
 
 1. Install the system requirements:
-    
+   
     - Ubuntu 18.04/20.04/22.04 or later
 	
 	- Anaconda (latest version)
@@ -47,5 +57,5 @@ AMACollision is a multi-agent adversarial testing platform built on top of the C
 
      `pip install tensorboardX==1.15`
 
-### Instructions
+## Instructions
 Soon to be updated here along with the paper.
