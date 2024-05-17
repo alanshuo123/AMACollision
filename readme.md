@@ -27,14 +27,17 @@ For all three road structures, we deploy three distinct NPC configurations (e.g.
 
 ### Results for RQ1
 We measure the effectiveness of **AMACollision** in exposing failures of the *AVUT* in terms of five metrics: $R_{collision}$, $R_{destination}$, $OL$, $TTFC$ and $TTD$. We ran each baseline 500 episodes, with 200 simulation timesteps in each episode, and computed the average value for $OL$, $TTFC$ and $TTD$ of all 500 episodes.
+
 <img src="./figure/resultForRQ1.png" alt="avatar" />
 
 ### Results for RQ2
 we conduct comparative experiments using all three NPC configurations across each road structure. 
+
 <img src="./figure/resultForRQ2.png" alt="avatar" />
 
 ### Results for RQ3
 The experiments for RQ3 are conducted on each speed limit, utilizing the second NPC configuration across all road structures. The primary metrics for RQ3 are $R_{Collision}$, and $TTFC$.
+
 <img src="./figure/resultForRQ3.png" alt="avatar" />
 
 ------
