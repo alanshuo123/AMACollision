@@ -1,10 +1,16 @@
 # AMACollision
 
 This is a repository for the paper "AMACollision: An Advanced Framework for Testing Autonomous Vehicles Based on Adversarial Multi-Agent".
+
 AMACollision is a multi-agent adversarial testing platform built on top of the Carla Autonomous Driving simulator and Macad-Gym.
+
 <img src="./figure/overview.png" alt="avatar" />
 
 As illustrated in figure above, AMACollision is integrated with Carla to provide the simulated driving environment. At each timestep, the state information is extracted from the simulated driving environment and then undergoes the process of State Encoding. The reward is computed by Reward Function based on the encoded state information. We specially design a unified AMA policy model for each diverse adversarial agent. Each AMA policy model feeds back an action for corresponding NPC in the driving environment to control its behavior. To be specific, we consider three distinct kinds of diverse agents, i.e., four-wheeled vehicles, two-wheeled vehicles (including motorcycles and bicycles), and pedestrians. 
+
+
+
+------
 
 ## NetWork Architecture
 The AMA policy model leverages the following neural network architecture:
@@ -13,6 +19,8 @@ The AMA policy model leverages the following neural network architecture:
 The parameters of the four modules in the AMA policy model are shown in Table below:
 
 <img src="./figure/parametersOfDNN.png" alt="avatar" />
+
+------
 
 ## Results
 
@@ -23,6 +31,9 @@ All agents were evaluated on six metrics (*collision rate, similarity, speed, wa
 <img src="./figure/resultForRQ2.png" alt="avatar" />
 
 <img src="./figure/resultForRQ3.png" alt="avatar" />
+
+------
+
 
 
 ## Getting Started
