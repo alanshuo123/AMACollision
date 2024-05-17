@@ -9,45 +9,102 @@ To validate the performance of AMACollision under diverse driving scenarios, we 
 
 Town 3 is a larger town with features of a downtown urban area. The map includes some interesting road network features such as a roundabout, T-Junction and Intersection. 
 
-<img src="../figure/experimentSetup/town03.png" alt="avatar" style="zoom: 33%;" />
+​	<img src="../figure/experimentSetup/town03.png" alt="avatar"   />
 
-### **T-Junction**
+- **T-Junction**
 
-A three-way intersection which requires precise maneuvering of the *AVUT* when merging or yielding, e.g., right-of-way conflicts.
+  A three-way intersection which requires precise maneuvering of the *AVUT* when merging or yielding, e.g., right-of-way conflicts.
 
-<img src="../figure/experimentSetup/T-Junction.png" alt="avatar" style="zoom:33%;" />
-
-
-
-### **Intersection** 
-
-A classic four-way crossroads without traffic signals, including multiple conflict points which tests the *AVUT*'s ability to coordinate with other agents.
-
-<img src="../figure/experimentSetup/Intersection.png" alt="avatar" style="zoom: 67%;"/>
+  <img src="../figure/experimentSetup/T-Junction.png" alt="avatar"   />
 
 
 
-### **Roundabout**
+- **Intersection** 
 
-This road introduces a circular segment, significantly increasing the complexity due to the need for continuous lane-following while managing entry, circulate and exit from the roundabout unpredictably.
+  A classic four-way crossroads without traffic signals, including multiple conflict points which tests the *AVUT*'s ability to coordinate with other agents.
 
-<img src="../figure/experimentSetup/Roundabout.png" alt="avatar" style="zoom: 33%;"/>
+  <img src="../figure/experimentSetup/Intersection.png" alt="avatar"  />
+
+
+
+- **Roundabout**
+
+  This road introduces a circular segment, significantly increasing the complexity due to the need for continuous lane-following while managing entry, circulate and exit from the roundabout unpredictably.
+
+  <img src="../figure/experimentSetup/Roundabout.png" alt="avatar"  />
+
+  
+
+------
 
 
 
 ## NPC Configurations
 
-For all three road structures, we deploy three distinct NPC configurations to enhance the complexity and variability of testing conditions. Each NPC is assigned a unique starting position and destination. 
+For all three road structures, we deploy three distinct NPC configurations to enhance the complexity and variability of testing conditions. Each NPC is assigned a unique starting position and destination. All starting positions and destinations of AVUT and NPCs are demonstrated on figures below. The red line represent the trajectory of the AVUT, others represent the trajectories of the NPCs. 
 
-- **NPC  Configuration 1:**  including two four-wheeled vehicles (2V). 
+**NPC  Configuration 1:**  including two four-wheeled vehicles (2V). 
 
+- **T-Junction**  
 
+  NPC1 is going to take a left turn , and NPC2 is going to go straight and get through the junction.
 
-- **NPC  Configuration 2:**  including two four-wheeled vehicles and one motorcycle (2V+1M). 
+  <img src="../figure/experimentSetup/T-Junction_2V.png" alt="avatar"  />
 
+- **Intersection**
 
+  Similar to T-Junction, NPC1 is going to take a left turn , and NPC2 is going to go straight and get through the intersection.
 
-- **NPC  Configuration 3:**  including two four-wheeled vehicles, one motorcycle, and one pedestrian (2V+1M+1P).  
+  <img src="../figure/experimentSetup/Intersection_2Vehicle.png" alt="avatar"  />
+
+- **Roundabout**
+
+  NPC1 is going to driving along the round road, NPC2 is going to merging into the roundabout.
+
+  <img src="../figure/experimentSetup/Roundabout_2Vehicle.png" alt="avatar"  />
+
+**NPC  Configuration 2:**  including two four-wheeled vehicles and one motorcycle (2V+1M). 
+- **T-Junction**
+
+  Add a motocycle (NPC3), which is going to turn right on the junction.
+
+  <img src="../figure/experimentSetup/T-Junction_2Vehicle1Moto.png" alt="avatar"  />
+
+- **Intersection**
+
+  Add a motocycle (NPC3), which is going to drive straight to get through the intersection.
+
+  <img src="../figure/experimentSetup/Intersection_2Vehicle1Moto.png" alt="avatar"  />
+
+- **Roundabout**
+
+  Add a motocycle (NPC3), which is going to turn right and merge into the roundabout.
+
+  <img src="../figure/experimentSetup/Roundabout_2Vehicle1Moto.png" alt="avatar"  />
+
+**NPC  Configuration 3:**  including two four-wheeled vehicles, one motorcycle, and one perdestrian (2V+1M+1P).  
+
+- **T-Junction**
+
+  Add a perdestrian(NPC4), which is going to walk straightly and get through the junction. 
+
+  <img src="../figure/experimentSetup/T-Junction_2Vehicle1Moto1Ped.png" alt="avatar"  />
+
+- **Intersection**
+
+  Add a perdestrian(NPC4), which is going to walk straightly and get through the intersection. 
+
+  <img src="../figure/experimentSetup/Intersection_2Vehicle1Moto1Ped.png" alt="avatar"  />
+
+- **Roundabout**
+
+  Add a perdestrian(NPC4), which is going to walk straightly and get through the junction. 
+
+  <img src="../figure/experimentSetup/Roundabout_2Vehicle1Moto1Ped.png" alt="avatar"  />
+
+  
+
+------
 
 
 
