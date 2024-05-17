@@ -2,10 +2,6 @@
 
 This is a repository for the paper "AMACollision: An Advanced Framework for Testing Autonomous Vehicles Based on Adversarial Multi-Agent". **AMACollision** is a multi-agent adversarial testing platform built on top of the **Carla** Autonomous Driving simulator and Macad-Gym. The demo for **AMACollision** in finding safety-critical scenarios is presented below:
 
-<img src="./figure/collision1.gif" alt="avatar" />
-
-
-
 Here is the overview of **AMACollision**:
 
 <img src="./figure/overview.png" alt="avatar" />
