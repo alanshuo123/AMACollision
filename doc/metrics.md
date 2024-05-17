@@ -89,7 +89,7 @@ The lateral deviation error, measured as the NPC’s average deviation from the 
 The realism of driving trajectories is commonly assessed using distance-based evaluation metrics, which compare the generated trajectories to a real trajector. Acoordingly, we propose $LDE$, a distance-based scenario metric to evaluate the realism of generated trajectories, which measures the lateral deviation of the NPC's driving trajectory from the optimal trajectory planned by the $local planner$ in Carla. Lower $LDE$ values suggest a higher degree of realism in the NPCs’ movement patterns. The Root Mean Square Error (RMSE) of the LDE is then computed as an indicator of the trajectory's authenticity:
 
 $$
-LDE_{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} \left( lateral_error(Loc_i, Waypoint_i) \right)^2}
+LDE_{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} \left( lateral\_error(Loc_i, Waypoint_i) \right)^2}
 $$
 
 Where $Loc_i$ is the vehicle's position at time step $i$, $Waypoint_i$ is the optimal path point at time step $i$, and $lateral\_error$ is the lateral deviation between $Loc_i$ and $Waypoint_i$.
