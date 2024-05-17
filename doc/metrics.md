@@ -1,6 +1,6 @@
 # Evaluation Metrics
 
-To evaluate the performance of **AMACollision**, we employ following metrics.  We compute the average value of  $TTFC$, $OL$, $TTD$ during all episodes in the experiment, to assess the efficiency of AMACollision in generating failure scenarios. 
+To evaluate the performance of $AMACollision$, we employ following metrics.  We compute the average value of  $TTFC$, $OL$, $TTD$ during all episodes in the experiment, to assess the efficiency of AMACollision in generating failure scenarios. 
 
 $R_{collision}$ and $R_{destination}$ represent the rates of collision occurrences and successful arrival at the destination, respectively.  Considering that AVUT can recover from low-intensity collisions and continue towards its destination, the sum of the $R_{collision}$ and $R_{destination}$ does not necessarily equal. 
 
@@ -14,8 +14,6 @@ The calculation rules of these metrics are given here:
 
 The collision rate, defined as the frequency of collisions between the *AVUT* and NPCs, computed across all episodes. Higher values are preferable as they indicate more collisions involving the *AVUT*.
 
-
-
 $$
 \text{$R_{collision}$} = \frac {\textit{Num}(\text{episodes with collisions involving AVUT})} {\textit{Num}(\text{total episodes})}
 $$
@@ -24,7 +22,7 @@ where Num(⋅) means the number.
 
 ## **$R_{destination}$**
 
-The success rate of the *AVUT* reaching its destination, computed across all episodes. Lower values indicate **AMACollision**'s greater effectiveness in preventing the *AVUT* from completing its mission.
+The success rate of the *AVUT* reaching its destination, computed across all episodes. Lower values indicate $AMACollision$'s greater effectiveness in preventing the *AVUT* from completing its mission.
 
 
 
@@ -36,7 +34,7 @@ $$
 
 ## **$OL$**
 
- The number of instances where the *AVUT* deviates from its lane per episode, indicating steering errors. Higher values suggest more effective adversarial interventions by **AMACollision**.
+ The number of instances where the *AVUT* deviates from its lane per episode, indicating steering errors. Higher values suggest more effective adversarial interventions by $AMACollision$.
 
 
 
