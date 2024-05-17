@@ -27,11 +27,7 @@ The parameters of the four modules in the AMA policy model are shown in Table be
 ------
 
 ## Experiments and Results
-For all three road structures, we deploy three distinct NPC configurations (e.g., the number and type of NPCs) to enhance the complexity and variability of testing conditions. The first configuration comprises two four-wheeled vehicles. The second configuration adds one extra motorcycle to the first configuration. The third configuration is expanded to including two four-wheeled vehicles, one motorcycle, and one pedestrian. Each NPC is assigned a unique starting position and destination. The detailed NPC configurations are presented in  
-
-[experimentSetup.md]: https://github.com/alanshuo123/AMACollision/blob/main/doc/experimentSetup.md
-
-
+For all three road structures, we deploy three distinct NPC configurations (e.g., the number and type of NPCs) to enhance the complexity and variability of testing conditions. The first configuration comprises two four-wheeled vehicles. The second configuration adds one extra motorcycle to the first configuration. The third configuration is expanded to including two four-wheeled vehicles, one motorcycle, and one pedestrian. Each NPC is assigned a unique starting position and destination. The detailed NPC configurations are presented in  [Here](https://github.com/alanshuo123/AMACollision/blob/main/doc/experimentSetup.md).
 
 ### Results for RQ1
 We measure the effectiveness of **AMACollision** in exposing failures of the *AVUT* in terms of five metrics: $R_{collision}$, $R_{destination}$, $OL$, $TTFC$ and $TTD$. We ran each baseline 500 episodes, with 200 simulation timesteps in each episode, and computed the average value for $OL$, $TTFC$ and $TTD$ of all 500 episodes.
